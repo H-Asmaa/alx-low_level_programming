@@ -9,19 +9,22 @@
  */
 int main(void)
 {
-    int i;
-    int j;
+	int i;
+	int j;
 
-    for (i = 48; i <= 57; i++)
-    {
-        for (j = 48; j <= 57; j++)
-        {
-            putchar(i);
-            putchar(j);
-            putchar(',');
-            putchar(' ');
-        }
-    }
-    putchar('\n');
-    return (0);
+	for (i = 48; i <= 57; i++)
+	{
+		for (j = i; j <= 57; j++)
+		{
+			putchar(i);
+			putchar(j);
+			if (i != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
