@@ -9,21 +9,21 @@
  */
 int main(void)
 {
-    int i;
+    int i;       
     int j;
-    int l;
+	int l;            
 
     for (i = 48; i <= 57; i++)
     {
-        for (j = i++; j <= 57; j++)
+        for (j = i+1; j <= 57; j++)
         {
-	        for (l = j++; l <= 57; l++)
+	        for (l = j+1; l <= 57; l++)
 	        {
-	        	putchar(i);
-		        putchar(j);
-		        putchar(l);
-		        if (i != 57 && j != 57 && l != 57){
-		        	putchar(',');
+	            putchar(i);
+	            putchar(j);
+	            putchar(l);
+	            if (i < 55){
+		            putchar(',');
 		            putchar(' ');
 				}
 	        }
