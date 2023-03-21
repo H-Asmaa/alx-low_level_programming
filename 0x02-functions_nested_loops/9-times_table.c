@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - check the code.
+ * times_table - check the code.
  * Description
  * Return: Always 0.
  */
