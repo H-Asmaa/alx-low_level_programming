@@ -4,6 +4,7 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ * Description : Print_alpha
  */
 void print_alphabet(void)
 {
