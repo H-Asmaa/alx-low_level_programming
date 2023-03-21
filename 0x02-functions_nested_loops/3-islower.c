@@ -1,5 +1,5 @@
 /**
- * main - check the code.
+ * _islower - check the code.
  *
  * Return: Always 0.
  */
@@ -9,7 +9,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else if (c <= 90 && c >= 65)
+	else
 	{
 		return (0);
 	}
