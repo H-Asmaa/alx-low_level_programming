@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - check the code.
  * @c:variable c
  * Return: Always 0.
  */
