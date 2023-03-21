@@ -1,4 +1,4 @@
-void print_alphabet(void);
+#include "main.h"
 /**
  * main - check the code
  *
@@ -6,6 +6,6 @@ void print_alphabet(void);
  */
 int main(void)
 {
-    print_alphabet();
-    return (0);
+	print_alphabet();
+	return (0);
 }
