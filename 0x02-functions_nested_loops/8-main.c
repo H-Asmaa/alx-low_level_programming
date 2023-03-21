@@ -1,4 +1,5 @@
-void jack_bauer(void);
+#include "main.h"
+
 /**
  * main - check the code
  *
