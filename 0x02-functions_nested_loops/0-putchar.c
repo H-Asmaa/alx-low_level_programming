@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int putchar(void){
+int _putchar(void){
 	printf("_putchar\n");
 	return (0);
 }
