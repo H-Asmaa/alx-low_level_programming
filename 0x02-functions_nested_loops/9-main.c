@@ -1,4 +1,5 @@
-void times_table(void);
+#include "main.h"
+
 /**
  * main - check the code
  *
@@ -6,6 +7,6 @@ void times_table(void);
  */
 int main(void)
 {
-    times_table();
-    return (0);
+	times_table();
+	return (0);
 }
