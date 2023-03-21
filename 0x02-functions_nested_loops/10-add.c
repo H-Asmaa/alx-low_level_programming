@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * times_table - check the code.
+ * add - check the code.
+ * @a: variable a
+ * @b: variable b
  * Description
  * Return: Always 0.
  */
 int add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }
