@@ -1,6 +1,7 @@
-int _putchar(char c);
+#include "main.h"
+
 /**
- * main - check the code.
+ * print_alphabet_x10 - check the code.
  *
  * Return: Always 0.
  */
