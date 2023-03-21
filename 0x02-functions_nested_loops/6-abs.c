@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - check the code.
+ * _abs - check the code.
  * @n:variable
  * Description
  * Return: Always 0.
