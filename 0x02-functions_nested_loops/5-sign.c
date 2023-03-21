@@ -2,7 +2,8 @@
 
 /**
  * print_sign - check the code.
- * @c:variable
+ * @n:variable
+ * Description
  * Return: Always 0.
  */
 int print_sign(int n)
