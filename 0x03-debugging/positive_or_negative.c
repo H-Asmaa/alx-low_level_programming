@@ -4,7 +4,7 @@
 
 /**
  * positive_or_negative - Entry point
- *
+ * @n:variable
  * Return: Always 0 (Success)
  */
 void positive_or_negative(int n)
