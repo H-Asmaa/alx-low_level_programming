@@ -10,6 +10,7 @@ int main(void)
 	unsigned long int a, b, c, i;
 	a = 1;
 	b = 2;
+
 	printf("%lu, ", a);
 	printf("%lu, ", b);
 	for (i = 0; i < 48; i++)
