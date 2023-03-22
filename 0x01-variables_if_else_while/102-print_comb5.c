@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	int i, j;
 
@@ -30,4 +30,3 @@ int main()
 	putchar('\n');
 	return (0);
 }
-

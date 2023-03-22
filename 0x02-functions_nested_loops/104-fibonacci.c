@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+:set ff=unix
 /**
  * Length - returns the lenth of string
  * @num : operand number
