@@ -21,5 +21,6 @@ int main(void)
 		if (i != 47)
 			printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
