@@ -1,33 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_to_98 - check the code.
- * @n: variable
+ * times_table - check the code.
  * Description
  * Return: Always 0.
  */
-void print_to_98(int n)
+void print_times_table(int x)
 {
-	int i;
+	if (x < 15 && x > 0)
+	{
+		int i, j, n;
 
-	for (i = n; i <= 98 && n <= 98; i++)
-	{
-		printf("%d", i);
-		if (i != 98)
+		for (i = 0; i <= x; i++)
 		{
-			putchar(',');
-			putchar(' ');
+			for (j = 0; j <= x; j++)
+			{
+				n = i * j;
+				if (n > 9)
+				{
+					if (n > 99)
+					{
+						_putchar((n / 100) + '0');
+					}
+					_putchar((n / 10) % 10 + '0');
+					_putchar(n % 10 + '0');
+				}
+				else
+				{
+					if (j != 0)
+					{
+						_putchar(' ');
+					}
+					_putchar(n + '0');
+				}
+				if (j < x)
+				{
+					_putchar(',');
+					if (n / 100 == 0)
+					{
+						_putchar(' ');
+						if (((i + 1) * (j + 1)) / 100 == 0)
+						{
+							_putchar(' ');
+						}
+					}
+				}
+			}
+			_putchar('\n');
 		}
 	}
-	for (i = n; i >= 98 && n > 98; i--)
-	{
-		printf("%d", i);
-		if (i != 98)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	_putchar('\n');
 }
