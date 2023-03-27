@@ -1,10 +1,20 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * reset_to_98 - check the code
- * @n: variable
+ * _strlen - check the code
+ * @s: pointer
  * Return: void.
  */
-void reset_to_98(int *n)
+int _strlen(char *s)
 {
+	int i;
+	int count;
+
+	count = 0;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		count++;
+	}
+
+	return (count);
 }
