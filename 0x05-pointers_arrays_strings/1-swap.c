@@ -5,6 +5,11 @@
  * @n: variable
  * Return: void.
  */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
+	int tmp;
+
+	tmp = *b;
+	*b = *a;
+	*a = tmp;
 }
