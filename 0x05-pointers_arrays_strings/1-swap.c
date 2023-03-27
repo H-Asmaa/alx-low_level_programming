@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * reset_to_98 - check the code
- * @n: variable
+ * swap_int - check the code
+ * @a: pointer
+ * @b: pointer
  * Return: void.
  */
 void swap_int(int *a, int *b)
