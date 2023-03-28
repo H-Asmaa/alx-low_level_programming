@@ -1,10 +1,18 @@
 #include "main.h"
 
 /**
- * reset_to_98 - check the code
- * @n: variable
+ * _strcpy - check the code
+ * @dest: pointer
+ * @src: pointer
  * Return: void.
  */
-void reset_to_98(int *n)
+char *_strcpy(char *dest, char *src)
 {
+	int i;
+
+	for (i = 0; src[i] >= '\0'; i++)
+	{
+		*(dest + i) = *(src + i);
+	}
+	return (dest);
 }
