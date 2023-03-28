@@ -1,10 +1,20 @@
 #include "main.h"
 
 /**
- * reset_to_98 - check the code
+ * print_array - check the code
+ * @a: pointer
  * @n: variable
  * Return: void.
  */
-void reset_to_98(int *n)
+void print_array(int *a, int n)
 {
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
+		if (i != n - 1)
+			printf(", ");
+	}
+	printf("\n");
 }
