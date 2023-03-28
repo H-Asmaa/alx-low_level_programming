@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - check the code
+ * _atoi - check the code
  * @s: pointer
  * Return: void.
  */
@@ -10,8 +10,7 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int num = 0;
 
-	do
-	{
+	do {
 		if (*s == '-')
 			sign *= -1;
 
