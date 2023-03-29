@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - check the code
+ * _strncat - check the code
  * @dest: pointer destination
  * @src: pointer source
+ * @n: variable
  * Return: void.
  */
 char *_strncat(char *dest, char *src, int n)
