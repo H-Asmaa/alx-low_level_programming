@@ -1,1 +1,1 @@
-Readme for C basics
+Readme file for more pointers
