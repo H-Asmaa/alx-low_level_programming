@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcmp - check the code
- * @s1: pointer destination
- * @s2: pointer source
+ * reverse_array - check the code
+ * @a: pointer
+ * @n: variable
  * Return: void.
  */
 void reverse_array(int *a, int n)
