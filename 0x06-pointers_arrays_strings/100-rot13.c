@@ -14,16 +14,15 @@ char *rot13(char *str)
 
     for (i = 0; str[i] != '\0'; i++)
     {
-        for (j = 0; j < 26; j++)
+        for (j = 0; j < 26 && (str[i] == arrayClear[j] || str[i] == arrayClear[j] - 32); j++)
         {
-            if (str[i] == arrayClear[j])
+            if (str[i] >= 'a' && str[i] <= 'z')
             {
                 str[i] = arrayCoded[j];
-                break;
-            }else if (str[i] == arrayClear[j] - 32)
+            }
+            else
             {
                 str[i] = arrayCoded[j] - 32;
-                break;
             }
         }
     }
