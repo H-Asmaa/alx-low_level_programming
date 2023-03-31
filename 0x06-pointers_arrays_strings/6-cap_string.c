@@ -8,20 +8,17 @@
 char *cap_string(char *str)
 {
 	int i;
-
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] -= ('a' - 'A');
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == ' ' || str[i] == '\t' ||
-			str[i] == '\n' || str[i] == ',' || str[i] == ';' ||
-			str[i] == '.' || str[i] == '!' || str[i] == '?' ||
-			str[i] == '"' || str[i] == '(' || str[i] == ')' ||
-			str[i] == '{' || str[i] == '}')
+		if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}')
 		{
-			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
-				str[i + 1] = str[i + 1] - 32;
+				str[i] = str[i] - ('a' - 'A');
 			}
 		}
 	}
-	return (str);
+	return str;
 }
