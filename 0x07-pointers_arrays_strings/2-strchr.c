@@ -16,10 +16,13 @@ char *_strchr(char *s, char c)
 		{
 			s = (s + i);
 		}
-		else
-		{
-			s = NULL;
-		}
 	}
-	return (s);
+	if (s != '\0')
+	{
+		return (s);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
