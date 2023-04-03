@@ -2,9 +2,9 @@
 
 /**
  * _memset - check the code
- * @s: pointer
- * @b: char
- * @n: variable
+ * @s: pointer.
+ * @b: char.
+ * @n: variable.
  * Return: void.
  */
 char *_memset(char *s, char b, unsigned int n)
