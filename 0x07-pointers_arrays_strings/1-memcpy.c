@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - check the code
+ * _memcpy - check the code
  * @dest: pointer.
  * @src: pointer.
  * @n: variable.
