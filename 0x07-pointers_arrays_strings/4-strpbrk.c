@@ -21,7 +21,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	if (accept[i] == '\0')
-		return (s);
 	return ('\0');
 }
