@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - check the code
+ * set_string - check the code
  * @s: pointer to a pointer.
  * @to: pointer.
  * Return: char.
