@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - short cut { return (*s != '\0' ? _strlen_recursion(s + 1) + 1 : 0); }
+ * _strlen_recursion -return (*s != '\0' ? _strlen_recursion(s + 1) + 1 : 0); }
  * @s: pointer.
  * Return: void.
  */
