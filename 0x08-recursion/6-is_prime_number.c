@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime_helper - check the code
+ * is_prime_numberBackup - check the code
  * @n: variable.
  * @i: variable.
  * Return: int.
