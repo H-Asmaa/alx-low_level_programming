@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c *.c | ar rcs liball.a
+gcc -c $(pwd)/*.c | ar rcs liball.a
