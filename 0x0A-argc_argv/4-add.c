@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int tmp;
 	int sum = 0;
+
 	if (argc > 1)
 	{
 		tmp = argc;
