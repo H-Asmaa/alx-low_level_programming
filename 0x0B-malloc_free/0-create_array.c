@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - check the code.
@@ -18,6 +19,8 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 	{
 		p[i] = c;
+		printf ("%c\n", p[i]);
 	}
+	free(p);
 	return (p);
 }
