@@ -13,23 +13,28 @@
 int main(int argc, char *argv[])
 {
 	int tmp;
-	int counter;
+	int counter = 0;
+	int j;
 
-	counter = 0;
-
+	for (j = 1; j < (int)strlen(argv[1]); j++)
+	{
+		if (!isdigit(argv[1][j]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
 	tmp = atoi(argv[1]);
 	if (tmp < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	if (argc != 2 || !isdigit(*argv[1]))
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 	while (tmp > 0)
 	{
 		if (tmp >= 25)
