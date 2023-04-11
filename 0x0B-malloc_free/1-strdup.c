@@ -1,24 +1,29 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * create_array - check the code.
+ * _strdup - check the code.
  * @str: variable
  * Return: Always 0.
  */
 char *_strdup(char *str)
 {
-	int counter;
 	char *p;
-	
-	counter = 0;
-	while (*str >= '\n')
+	int i;
+
+	i = 0;
+
+	if (str == NULL)
+		return (NULL);
+	while (str[i] != '\0')
 	{
-		str++;
-		counter++;
+		i++;
 	}
-	
-	p = malloc(sizeof(char) * counter);
+	p = malloc(i + 1);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		p[i] = str[i];
+	}
 	return (p);
 }
