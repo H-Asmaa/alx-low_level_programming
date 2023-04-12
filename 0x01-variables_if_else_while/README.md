@@ -42,11 +42,3 @@
       <li>followed by a new line</li>
   </ul>
 </ul>
-
-<h2>8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity</h2>
-<h4>A C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.</h4>
-<ul>
-<li>You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts</li>
-<li>Your program should return 1</li>
-<li>Your program should compile without any warnings when using the -Wall gcc option</li>
-</ul>
