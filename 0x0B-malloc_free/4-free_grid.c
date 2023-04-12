@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - check the code.
- * @width: variable
+ * free_grid - check the code.
+ * @grid: variable
  * @height: variable
  * Return: Always 0.
  */
