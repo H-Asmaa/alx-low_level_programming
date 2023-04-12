@@ -8,9 +8,6 @@
  * @av: variable
  * Return: Always 0.
  */
-#include <stdlib.h>
-#include <string.h>
-
 char *argstostr(int ac, char **av)
 {
 	int i, j;
