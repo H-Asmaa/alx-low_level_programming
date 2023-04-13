@@ -8,42 +8,38 @@
  * @n: variable
  * Return: pointer casted to the type void.
  */
-#include <stdlib.h>
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int len1, len2, len, i, j;
+	unsigned int i;
+	unsigned int l;
+	unsigned int j;
+	unsigned int q;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		;
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		;
-
-	if (n > len2)
-		n = len2;
-
-	len = len1 + n + 1;
-	p = (char *)malloc(len * sizeof(char));
-	if (p == NULL)
-		return NULL;
-
 	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (l = 0; s2[l] != '\0'; l++)
+		;
+	if (n > l)
+		n = l;
+	p = (char *)malloc((i + n + 1) * sizeof(char));
+	if (p == NULL)
+		return (NULL);
+	j = 0;
+	while (s1[j] != '\0')
 	{
-		p[i] = s1[i];
+		p[j] = s1[j];
+		j++;
 	}
-
-	for (j = 0; j < n && s2[j] != '\0'; j++, i++)
+	for (q = 0; q < n && s2[q] != '\0'; q++)
 	{
-		p[i] = s2[j];
+		p[j] = s2[q];
+		j++;
 	}
-
-	p[i] = '\0';
-
-	return p;
+	p[j] = '\0';
+	return (p);
 }
