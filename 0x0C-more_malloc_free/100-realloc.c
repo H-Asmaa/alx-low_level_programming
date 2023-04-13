@@ -11,37 +11,43 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new_ptr;
+	char *p;
 	unsigned int i;
+	unsigned int tmp;
+	unsigned int tmp1;
 
-	if (new_size == 0)
+	if (ptr == NULL)
+		ptr = (void *)malloc(new_size * sizeof(int));
+	if (new_size == old_size)
+		return (ptr);
+	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-
-	if (ptr == NULL)
+	if (new_size > old_size)
 	{
-		return (malloc(new_size));
+		tmp = new_size + old_size;
+		tmp1 = old_size;
 	}
-
-	if (new_size == old_size)
+	else if (new_size < old_size)
 	{
-		return (ptr);
+		tmp = new_size;
+		tmp1 = new_size;
 	}
-
-	new_ptr = malloc(new_size);
-	if (new_ptr == NULL)
-	{
+	p = malloc(tmp1 * sizeof(int));
+	if (p == NULL)
 		return (NULL);
-	}
-
-	for (i = 0; i < old_size && i < new_size; i++)
+	for (i = 0; i < tmp1; i++)
 	{
-		((char *)new_ptr)[i] = ((char *)ptr)[i];
+		((char *)p)[i] = ((char *)ptr)[i];
 	}
-
 	free(ptr);
-
-	return (new_ptr);
+	ptr = (void *)malloc((tmp) * sizeof(int));
+	for (i = 0; i < tmp1; i++)
+	{
+		((char *)ptr)[i] = ((char *)p)[i];
+	}
+	free(p);
+	return (ptr);
 }
