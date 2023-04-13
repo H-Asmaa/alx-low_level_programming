@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * array_range - check the code.
@@ -14,7 +15,8 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	p = (int *)calloc(max - min, sizeof(int));
+
+	p = malloc((max - min + 1) * sizeof(int));
 	if (p == NULL)
 		return (NULL);
 	for (i = 0; i <= max; i++)
