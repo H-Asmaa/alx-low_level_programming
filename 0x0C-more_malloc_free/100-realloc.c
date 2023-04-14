@@ -9,16 +9,6 @@
  * @new_size: variable
  * Return: pointer.
  */
-#include "main.h"
-#include <stdlib.h>
-
-/**
- * _realloc - Main Entry
- * @ptr: input
- * @old_size: input
- * @new_size: input
- * Return: 0
- */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
