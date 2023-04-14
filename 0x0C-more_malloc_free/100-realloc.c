@@ -37,6 +37,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	free(ptr);
 	ptr = (void *)malloc(new_size);
+	if (ptr == NULL)
+		return (NULL);
 	for (i = 0; i < tmp1; i++)
 	{
 		((char *)ptr)[i] = ((char *)p)[i];
