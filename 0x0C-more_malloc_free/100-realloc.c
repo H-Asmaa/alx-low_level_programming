@@ -9,15 +9,27 @@
  * @new_size: variable
  * Return: pointer.
  */
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * _realloc - Main Entry
+ * @ptr: input
+ * @old_size: input
+ * @new_size: input
+ * Return: 0
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
-	unsigned int i;
-	unsigned int tmp1;
+	unsigned int i, max = new_size;
+	char *oldp = ptr;
 
-	tmp1 = new_size;
 	if (ptr == NULL)
-		return (malloc(new_size));
+	{
+		p = malloc(new_size);
+		return (p);
+	}
 	else if (new_size == 0)
 	{
 		free(ptr);
@@ -26,23 +38,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	else if (new_size == old_size)
 		return (ptr);
 
-	if (new_size > old_size)
-		tmp1 = old_size;
-	p = malloc(tmp1);
+	p = malloc(new_size);
 	if (p == NULL)
 		return (NULL);
-	for (i = 0; i < tmp1; i++)
-	{
-		((char *)p)[i] = ((char *)ptr)[i];
-	}
+	if (new_size > old_size)
+		max = old_size;
+	for (i = 0; i < max; i++)
+		p[i] = oldp[i];
 	free(ptr);
-	ptr = malloc(new_size);
-	if (ptr == NULL)
-		return (NULL);
-	for (i = 0; i < tmp1; i++)
-	{
-		((char *)ptr)[i] = ((char *)p)[i];
-	}
-	free(p);
-	return (ptr);
+	return (p);
 }
