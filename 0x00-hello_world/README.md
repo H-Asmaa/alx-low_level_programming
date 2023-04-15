@@ -73,3 +73,5 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <lottie-player src="https://lottie.host/a00335a2-22ba-4cc5-b6c9-81cefe04eabb/Xyu1kswXla.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
