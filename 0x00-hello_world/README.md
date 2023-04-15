@@ -1,5 +1,12 @@
 <head>
-
+	<style>
+		.center {
+		  margin: auto;
+		  width: 50%;
+		  border: 3px solid green;
+		  padding: 10px;
+		}
+	</style>
 </head>
 <body>
 <h1>README 0x00-hello_world</h1>
@@ -77,6 +84,5 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
-	<p><img src="Shots/lf20_w51pcehl.gif" alt="testannimation" 
-   style= "margin: auto; width: 50%;"></img></p>
+	<p><img class="center" src="Shots/lf20_w51pcehl.gif" alt="testannimation" ></img></p>
 </body>
