@@ -10,6 +10,13 @@
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li>-E : Flag that instructs the compiler to stop after preprocessing stage</li>
+			<li>-o : Falg responsible of specifying the output file name for the compiler</li>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>1. Compiler</h2>
 <h4>A script that compiles a C file but does not link.</h4>
