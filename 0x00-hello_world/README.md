@@ -10,7 +10,7 @@
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
-
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>1. Compiler</h2>
 <h4>A script that compiles a C file but does not link.</h4>
 <ul>
@@ -19,6 +19,9 @@
 <p>Example: if the C file is main.c, the output file should be main.o</p>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/1-compiler.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>2. Assembler</h2>
 <h4>A script that generates the assembly code of a C code and save it in an output file.</h4>
 <ul>
@@ -27,12 +30,18 @@
 <p>Example: if the C file is main.c, the output file should be main.s
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/2-assembler.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>3. Name</h2>
 <h4>A script that compiles a C file and creates an executable named cisfun.</h4>
 <ul>
 <li>The C file name will be saved in the variable $CFILE</li>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/3-name.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>4. Hello, puts</h2>
 <h4>A C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.</h4>
 <ul>
@@ -41,6 +50,9 @@
 <li>Your program should end with the value 0</li>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/4-puts.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>5. Hello, printf</h2>
 <h4>A C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.</h4>
 <ul>
@@ -50,6 +62,9 @@
 <li>Your program should compile without warning when using the -Wall gcc option</li>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/5-printf.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>6. Size is not grandeur, and territory does not make a nation</h2>
 <h4>A C program that prints the size of various types on the computer it is compiled and run on.</h4>
 <ul>
@@ -59,6 +74,9 @@ Warnings are allowed</li>
 <li>You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option</li>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>7. Intel</h2>
 <h4>A script that generates the assembly code (Intel syntax) of a C code and save it in an output file.</h4>
 <ul>
@@ -67,6 +85,9 @@ Warnings are allowed</li>
 <p>Example: if the C file is main.c, the output file should be main.s</p>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="Shots/100-intel.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 <h2>8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity</h2>
 <h4>A C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.</h4>
 <ul>
@@ -74,4 +95,9 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
+
+<h6>SOLUTION</h6>
+	<p><img src="Shots/101-quote.jpg" alt="0-preprocessor"></img></p>
+<!--------------------------------------------------------------------------------------------------------------->
 </body>
+
