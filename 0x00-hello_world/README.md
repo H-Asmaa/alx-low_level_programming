@@ -14,8 +14,8 @@
 <h6>DESCRIPTION</h6>
 	<p>
 		<ul>
-			<li>-E : Flag that instructs the compiler to stop after preprocessing stage</li>
-			<li>-o : Falg responsible of specifying the output file name for the compiler</li>
+			<li><h6>-E : Flag that instructs the compiler to stop after preprocessing stage</h6></li>
+			<li><h6>-o : Falg responsible of specifying the output file name for the compiler</h6></li>
 		</ul>
 	</p>
 <!--------------------------------------------------------------------------------------------------------------->
