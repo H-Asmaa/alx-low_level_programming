@@ -13,8 +13,8 @@
 <h6>DESCRIPTION</h6>
 	<p>
 		<ul>
-			<li><h6 color="red">-E : Flag that instructs the compiler to stop after preprocessing stage</h6></li>
-			<li><h6>-o : Falg responsible of specifying the output file name for the compiler</h6></li>
+			<li><h6 color="blue">-E : Flag that instructs the compiler to stop after preprocessing stage</h6></li>
+			<li><h6 color="blue">-o : Falg responsible of specifying the output file name for the compiler</h6></li>
 		</ul>
 	</p>
 <!--------------------------------------------------------------------------------------------------------------->
@@ -107,4 +107,3 @@ Warnings are allowed</li>
 	<p><img src="Shots/101-quote.jpg" alt="0-preprocessor"></img></p>
 <!--------------------------------------------------------------------------------------------------------------->
 </body>
-
