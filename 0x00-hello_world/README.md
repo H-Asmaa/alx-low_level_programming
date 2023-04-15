@@ -77,5 +77,6 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
+	<p><img src="Shots/lf20_w51pcehl.gif" alt="testannimation"></img></p>
+
 </body>
-<iframe src="https://lottie.host/?file=a00335a2-22ba-4cc5-b6c9-81cefe04eabb/Xyu1kswXla.json"></iframe>
