@@ -9,6 +9,7 @@
 </ul>
 
 <h6>SOLUTION</h6>
+<<<<<<< HEAD
 	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
 <h6>DESCRIPTION</h6>
 	<p>
