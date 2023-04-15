@@ -1,3 +1,7 @@
+<head>
+
+</head>
+<body>
 <h1>README 0x00-hello_world</h1>
 
 <h2>0. Preprocessor</h2>
@@ -8,7 +12,7 @@
 </ul>
 
 <h6>SOLUTION</h6>
-	<p><img src="Shots/snippet.png" alt="0-preprocessor"></img></p>
+	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
 
 <h2>1. Compiler</h2>
 <h4>A script that compiles a C file but does not link.</h4>
@@ -73,5 +77,5 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
-
+</body>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <lottie-player src="https://lottie.host/a00335a2-22ba-4cc5-b6c9-81cefe04eabb/Xyu1kswXla.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
