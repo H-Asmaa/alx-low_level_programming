@@ -9,7 +9,7 @@
 </ul>
 
 <h6>SOLUTION</h6>
-	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
+	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor" width="600px"></img></p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>1. Compiler</h2>
 <h4>A script that compiles a C file but does not link.</h4>
