@@ -1,18 +1,8 @@
-<head>
-	<style>
-		.center {
-		  margin: auto;
-		  width: 50%;
-		  border: 3px solid green;
-		  padding: 10px;
-		}
-	</style>
-</head>
 <body>
 <h1>README 0x00-hello_world</h1>
 
 <h2>0. Preprocessor</h2>
-<h'>A script that runs a C file through the preprocessor and save the result into another file.</h4>
+<h4>A script that runs a C file through the preprocessor and save the result into another file.</h4>
 <ul>
 <li>The C file name will be saved in the variable $CFILE</li>
 <li>The output should be saved in the file c</li>
@@ -84,5 +74,5 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
-	<p><img class="center" src="Shots/lf20_w51pcehl.gif" alt="testannimation" ></img></p>
+	<p><img src="Shots/lf20_w51pcehl.gif" alt="testannimation" ></img></p>
 </body>
