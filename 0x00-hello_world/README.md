@@ -78,6 +78,5 @@ Warnings are allowed</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
 	<p><img src="Shots/lf20_w51pcehl.gif" alt="testannimation" 
-   style= " display: block; margin-left: auto; margin-right: auto; width: 50%;"></img></p>
-
+   style= "margin: auto; width: 50%;"></img></p>
 </body>
