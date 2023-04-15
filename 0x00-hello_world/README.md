@@ -9,12 +9,11 @@
 </ul>
 
 <h6>SOLUTION</h6>
-<<<<<<< HEAD
 	<p><img src="Shots/0_preprocessor.jpg" alt="0-preprocessor"></img></p>
 <h6>DESCRIPTION</h6>
 	<p>
 		<ul>
-			<li><h6>-E : Flag that instructs the compiler to stop after preprocessing stage</h6></li>
+			<li><h6 color="red">-E : Flag that instructs the compiler to stop after preprocessing stage</h6></li>
 			<li><h6>-o : Falg responsible of specifying the output file name for the compiler</h6></li>
 		</ul>
 	</p>
