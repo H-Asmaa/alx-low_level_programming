@@ -1,11 +1,3 @@
-<head>
-	<style>
-		.center {
-		  display: block;
-		  margin: 0 auto;
-		}
-	</style>
-</head>
 <body>
 <h1>README 0x00-hello_world</h1>
 
@@ -82,5 +74,5 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
-	<p><img src="Shots/lf20_w51pcehl.gif" alt="testannimation" class="center"></img></p>
+	<div style="text-align:center"><img src="Shots/lf20_w51pcehl.gif" alt="testannimation"></img></p></div>
 </body>
