@@ -7,6 +7,9 @@
 <li>The output should be saved in the file c</li>
 </ul>
 
+<h6>SOLUTION</h6>
+	<p><img src="/Shots/snippet.png" alt="Italian Trulli"></img></p>
+
 <h2>1. Compiler</h2>
 <h4>A script that compiles a C file but does not link.</h4>
 <ul>

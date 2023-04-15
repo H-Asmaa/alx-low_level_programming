@@ -25,7 +25,6 @@
 <h2>1. The last digit</h2>
 <h4>This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.</h4>
 <ul>
-<li></li>
 <li>You can find the source code here <a href="https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c">here</a></li>
 <li>The variable n will store a different value every time you run this program</li>
 <li>You don’t have to understand what rand, srand, and RAND_MAX do. Please   do not touch this code</li>
@@ -41,4 +40,13 @@
       </ul>
       <li>followed by a new line</li>
   </ul>
+</ul>
+
+<!--2-->
+
+<h2>1. The last digit</h2>
+<h4>This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.</h4>
+<ul>
+<li></li>
+
 </ul>
