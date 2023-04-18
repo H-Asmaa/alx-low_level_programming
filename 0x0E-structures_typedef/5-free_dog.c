@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * print_dog - check the code.
+ * free_dog - check the code.
  * @d: pointer
  * Return: Always 0.
  */
