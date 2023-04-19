@@ -108,7 +108,7 @@ Warnings are allowed</li>
 <h6>SOLUTION</h6>
 	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
 <h6>DESCRIPTION</h6>
-	<p>I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that   anything with `()` is a function.<br>`sizeof()` is an operator.
+	<p>I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that   anything with `()` is a function.`sizeof()` is an operator.
 	<img src="Shots/mind_blowing.gif" alt="Mind_blowing">
 	<br>
 	`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.<br>
