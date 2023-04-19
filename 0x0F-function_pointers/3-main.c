@@ -18,25 +18,20 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	op = argv[2];
-
 	if (b == 0 && (*op == '/' || *op == '%'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-
 	func = get_op_func(op);
-
 	if (func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
 	printf("%d\n", func(a, b));
 
 	return (0);
