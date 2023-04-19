@@ -107,12 +107,11 @@ Warnings are allowed</li>
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
-<h6>SOLUTION</h6>
-	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
 <h6>DESCRIPTION</h6>
-	<p> I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that anything with `()` is a function.</p>
-	<h5 style="color:#566e37">`sizeof()` is an operator <img src="Shots/mind_blowing.gif" alt="Mind_blowing"></h5>
-	<br>`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.<br>
+	<p>I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that   anything with `()` is a function.<br>`sizeof()` is an operator.
+	<img src="Shots/mind_blowing.gif" alt="Mind_blowing">
+	<br>
+	`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.
 	<ul>The format specifiers that can be used with `sizeof()` are :
 		<li>`%z` or `%zu`: These are the recommended format specifiers to use with `sizeof`. Using them with `printf` will ensure that the output is formatted correctly.</li>
 		<li>`%d`: This format specifier is not recommended because `sizeof` returns an unsigned integer, while `%d` is for both signed and unsigned integers. Using `%d` may lead to incorrect output.</li>
@@ -149,7 +148,7 @@ Warnings are allowed</li>
 <h6>DESCRIPTION</h6>
 	<p>
 		<ul>
-			<li><h6 color="#566e37"></h6>writer() : A unistd.h function used to output data like printf with some key differences.</li>
+			<li><h6 color="#566e37">writer() : A unistd.h function used to output data like printf with some key differences.</h6></li>
 			<li><h6 color="#566e37">Remember to use (/) to display special characters.</h6></li>
 			<li><h6 color="#566e37">59 : Is the number of bytes to write from the buffer. </h6></li>
 			<li><h6 color="#566e37">1 :   Is the file descriptor for the standard output, which is typically the console. </h6></li>
