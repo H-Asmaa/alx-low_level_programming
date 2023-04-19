@@ -111,11 +111,12 @@ Warnings are allowed</li>
 	<p>I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that   anything with `()` is a function.<br>`sizeof()` is an operator.
 	<img src="Shots/mind_blowing.gif" alt="Mind_blowing">
 	<br>
-	`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.
-	<ul>The format specifiers that can be used with `sizeof()` are :
-		<li>`%z` or `%zu`: These are the recommended format specifiers to use with `sizeof`. Using them with `printf` will ensure that the output is formatted correctly.</li>
-		<li>`%d`: This format specifier is not recommended because `sizeof` returns an unsigned integer, while `%d` is for both signed and unsigned integers. Using `%d` may lead to incorrect output.</li>
-	</ul>
+	`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.<br>
+	The format specifiers that can be used with `sizeof()` are :
+		<ul>
+			<li><h6 color="#566e37">`%z` or `%zu`: These are the recommended format specifiers to use with `sizeof`. Using them with `printf` will ensure that the output is formatted correctly.</h6></li>
+			<li><h6 color="#566e37">`%d`: This format specifier is not recommended because `sizeof` returns an unsigned integer, while `%d` is for both signed and unsigned integers. Using `%d` may lead to incorrect output.</h6></li>
+		</ul>
 	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>7. Intel</h2>
