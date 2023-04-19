@@ -28,6 +28,16 @@
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/1-compiler.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li><h6 color="#566e37">-c : Flag that instructs the compiler to stop right before the linking stage</h6></li>
+			<li><h6 color="#566e37">${CFILE%.c}.o : This is to change the extension of the output file from .c to .o</h6></li>
+			<ul>
+				<li><h6>% : Is a wildcard charachter that match any string of character.</h6></li>
+			</ul>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>2. Assembler</h2>
 <h4>A script that generates the assembly code of a C code and save it in an output file.</h4>
@@ -39,6 +49,13 @@
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/2-assembler.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li><h6 color="#566e37">-S : Flag that instructs the compiler to generate assembly code from the input file</h6></li>
+			<li><h6 color="#566e37">${CFILE%.c}.s : This is to change the extension of the output file from .c to .o</h6></li>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>3. Name</h2>
 <h4>A script that compiles a C file and creates an executable named cisfun.</h4>
@@ -59,6 +76,13 @@
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/4-puts.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li><h6 color="#566e37">puts() is a function declared in stdio.h</h6></li>
+			<li><h6 color="#566e37">Since (") is a special character, we should put a (\) before it if we want to print it.</h6></li>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>5. Hello, printf</h2>
 <h4>A C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.</h4>
@@ -83,6 +107,17 @@ Warnings are allowed</li>
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
+<h6>SOLUTION</h6>
+	<p><img src="Shots/6-size.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p> I couldn't believe when a friend told me that `sizeof` is not a function. I had always assumed that anything with `()` is a function.</p>
+	<h5 style="color:#566e37">`sizeof()` is an operator <img src="Shots/mind_blowing.gif" alt="Mind_blowing"></h5>
+	<br>`sizeof` is used with data types, for example: `sizeof(int)`. The output is the size in bytes of the specified data type.<br>
+	<ul>The format specifiers that can be used with `sizeof()` are :
+		<li>`%z` or `%zu`: These are the recommended format specifiers to use with `sizeof`. Using them with `printf` will ensure that the output is formatted correctly.</li>
+		<li>`%d`: This format specifier is not recommended because `sizeof` returns an unsigned integer, while `%d` is for both signed and unsigned integers. Using `%d` may lead to incorrect output.</li>
+	</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>7. Intel</h2>
 <h4>A script that generates the assembly code (Intel syntax) of a C code and save it in an output file.</h4>
@@ -94,6 +129,12 @@ Warnings are allowed</li>
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/100-intel.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li><h6 color="#566e37">-masm=intel : it tells GCC to generate assembly language code using the Intel syntax, instead of the default AT&T syntax.</h6></li>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 <h2>8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity</h2>
 <h4>A C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.</h4>
@@ -105,5 +146,14 @@ Warnings are allowed</li>
 
 <h6>SOLUTION</h6>
 	<p><img src="Shots/101-quote.jpg" alt="0-preprocessor"></img></p>
+<h6>DESCRIPTION</h6>
+	<p>
+		<ul>
+			<li><h6 color="#566e37"></h6>writer() : A unistd.h function used to output data like printf with some key differences.</li>
+			<li><h6 color="#566e37">Remember to use (/) to display special characters.</h6></li>
+			<li><h6 color="#566e37">59 : Is the number of bytes to write from the buffer. </h6></li>
+			<li><h6 color="#566e37">1 :   Is the file descriptor for the standard output, which is typically the console. </h6></li>
+		</ul>
+	</p>
 <!--------------------------------------------------------------------------------------------------------------->
 </body>

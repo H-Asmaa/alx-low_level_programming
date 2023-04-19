@@ -1,31 +1,74 @@
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdio.h>
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int _putchar(char c)
 {
-	int j;
+	write(1, &c, 1);
+	return 0;
+}
+int *Our_printf(char *c)
+{
+	int i;
 
-	if (argc > 2)
+	i = 0;
+	while (c[i] != '\0')
 	{
-		printf("Error\n");
+		_putchar(c[i]);
+		i++;
+	}
+	return (0);
+}
+int is_digit(char s)
+{
+	if (s >= '0' && s <= '9')
+	{
+		return (1);
+	}
+	return (0);
+}
+int main(int argc, char __attribute__((unused)) * argv[])
+{
+	int i;
+	int j;
+	int interior;
+	int exterior;
+	int submul;
+
+	submul = 0;
+	if (argc != 3)
+	{
+		Our_printf("Error\n");
 		exit(98);
 	}
-	for (j = 1; j < (int)strlen(argv[1]); j++)
+	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[1][j]))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			exit(98);
+			if (!is_digit(argv[i][j]))
+			{
+				Our_printf("Error\n");
+				exit(98);
+			}
 		}
 	}
-	printf("%d", atoi(argv[1]) * atoi(argv[2]));
-	return (0);
+	for (interior = 0; argv[i][interior]; interior++)
+	{
+		for (exterior = 0; argv[i][exterior]; exterior++)
+		{
+			char s1[2], s2[2];
+			s1[0] = argv[i][interior];
+			s1[1] = '\0';
+			s2[0] = argv[i][exterior];
+			s2[1] = '\0';
+			submul = atoi(s1) * atoi(s2);
+			printf("%d\n", submul);
+		}
+	}
+	return (submul);
 }
