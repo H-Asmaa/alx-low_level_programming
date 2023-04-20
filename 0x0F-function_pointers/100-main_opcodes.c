@@ -25,10 +25,11 @@ int main(int argc, char *argv[])
 	}
 	p = (char *)main;
 	i = 0;
-	while (i < tmp && (void *)(p + i) != NULL)
+	while (i < tmp)
 	{
 		printf("%02x ", p[i] & 0xff);
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
