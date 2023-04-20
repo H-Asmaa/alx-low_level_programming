@@ -34,10 +34,13 @@ void print_all(const char *const format, ...)
 			break;
 		case 's':
 			ps = va_arg(arg, char *);
-			if (ps == NULL || ps[0] == '\0')
-				printf("(nil)");
-			printf("%s", ps);
 			separator = ", ";
+			if (ps == NULL || ps[0] == '\0')
+			{
+				printf("(nil)");
+				break;
+			}
+			printf("%s", ps);
 			break;
 		}
 		i++;
