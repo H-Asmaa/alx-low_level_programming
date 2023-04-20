@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
+ * main - doesn't check all the checks
  * @argc: parametre
  * @argv: parametre
  * Return: Always 0.
