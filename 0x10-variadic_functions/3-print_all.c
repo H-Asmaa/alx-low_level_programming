@@ -13,6 +13,8 @@ void print_all(const char *const format, ...)
 
 	i = 0;
 	va_start(arg, format);
+	if (format == NULL)
+		return;
 	while (format[i] != '\0')
 	{
 		separator = "";
