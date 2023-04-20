@@ -8,13 +8,11 @@
 void print_all(const char *const format, ...)
 {
 	int i;
-	char *separator = "";
-	char *ps;
+	char *ps, *separator = "";
 	va_list arg;
 
 	i = 0;
 	va_start(arg, format);
-
 	while (format[i] != '\0')
 	{
 		separator = "";
