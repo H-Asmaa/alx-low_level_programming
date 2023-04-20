@@ -25,8 +25,12 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	p = (char *)main;
-	for (i = 0; i < tmp; i++)
-		printf("%02x ", p[i] & 0xFF);
+	i = 0;
+	while (i < tmp && (void *)(p + i) != NULL)
+	{
+		printf("%02x ", p[i] & 0xff);
+		i++;
+	}
 	printf("\n");
-	return 0;
+	return (0);
 }
