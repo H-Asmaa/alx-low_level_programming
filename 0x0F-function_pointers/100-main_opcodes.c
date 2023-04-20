@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	}
 	p = (char *)main;
 	i = 0;
-	while (i < tmp)
+	while (i < tmp && (void *)(p + i) != NULL)
 	{
 		printf("%02x ", p[i] & 0xff);
 		i++;
