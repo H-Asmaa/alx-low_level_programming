@@ -36,8 +36,7 @@ void print_all(const char *const format, ...)
 			ps = va_arg(arg, char *);
 			if (ps == NULL || ps[0] == '\0')
 				printf("(nil)");
-			else
-				printf("%s", ps);
+			printf("%s", ps);
 			separator = ", ";
 			break;
 		}
