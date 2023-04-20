@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#define Hex 0xFF
+
 /**
  * main - check the code
  * @argc: parametre
@@ -27,7 +30,7 @@ int main(int argc, char *argv[])
 	i = 0;
 	while (i < tmp)
 	{
-		printf("%02x ", p[i] & 0xff);
+		printf("%02x ", p[i] & Hex);
 		i++;
 	}
 	printf("\n");
