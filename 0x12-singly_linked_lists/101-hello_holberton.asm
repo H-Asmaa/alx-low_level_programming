@@ -1,6 +1,6 @@
 section .data
-    msg db "Hello, Holberton", 10  ; the string to be written
-    len equ $ - msg + 1           ; calculate the length of the string
+    msg db "Hello, Holberton", 10
+    len equ $ - msg + 1
 
 section .text
     global main
@@ -10,10 +10,10 @@ main:
     push rbp
     mov rbp, rsp
 
-    lea rdi, [msg]      ; load address of message into rdi
-    xor eax, eax        ; zero out eax (first parameter for printf)
-    call printf         ; call printf function
+    lea rdi, [msg]
+    xor eax, eax
+    call printf
 
-    mov eax, 0          ; set return value to 0
-    leave               ; restore the stack pointer and base pointer
-    ret                 ; return from function
+    mov eax, 0
+    leave
+    ret
