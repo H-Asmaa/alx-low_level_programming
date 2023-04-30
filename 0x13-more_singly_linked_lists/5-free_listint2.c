@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - check the code.
+ * free_listint2 - check the code.
  * @head: a pointer
  * Return: Always count.
  */
