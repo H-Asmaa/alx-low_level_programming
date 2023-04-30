@@ -5,14 +5,14 @@
  * @head: a pointer
  * Return: Always count.
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
 
-	while (head != NULL)
+	while (*head != NULL)
 	{
-		tmp = head->next;
-		free(head);
-		head = tmp;
+		tmp = (*head)->next;
+		free(*head);
+		*head = tmp;
 	}
 }
