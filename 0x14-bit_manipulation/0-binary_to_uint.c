@@ -1,7 +1,4 @@
 #include "main.h"
-#include <string.h>
-#include <stdlib.h>
-#include <math.h>
 
 /**
  * binary_to_uint - check the code.
@@ -14,9 +11,14 @@ unsigned int binary_to_uint(const char *b)
 
 	for (; *b != '\0'; b++)
 	{
-		decimal <<= 1;
-		if (*b == '1')
-			decimal += 1;
+		if (*b == '0' || *b == '1')
+		{
+			decimal <<= 1;
+			if (*b == '1')
+				decimal += 1;
+		}
+		else
+			return (0);
 	}
 	return (decimal);
 }
