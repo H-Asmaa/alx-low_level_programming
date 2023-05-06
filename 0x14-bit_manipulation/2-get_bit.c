@@ -1,10 +1,20 @@
 #include "main.h"
 
 /**
- * binary_to_uint - check the code.
- * @b: a pointer
- * Return: Always count.
+ * get_bit - check the code.
+ * @n: unsigned long int
+ * @index: unsigned long int
+ * Return: 1 or 0.
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
+	unsigned long int tmp;
+
+	tmp = 1;
+	tmp = tmp << index;
+
+	if ((n & tmp) != 0)
+		return (1);
+	else
+		return (0);
 }
