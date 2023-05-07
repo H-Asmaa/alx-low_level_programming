@@ -4,7 +4,7 @@
  * clear_bit - check the code.
  * @n: unsigned long int
  * @index: unsigned long int
- * Return: int.
+ * Return: int 1 o -1.
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
