@@ -12,7 +12,7 @@ int get_endianness(void)
 	tmp = 0x12345678;
 	p = (char *)&tmp;
 	if (*p == 0x12)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
