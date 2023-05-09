@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((read_f = read(f_from, buffer, 1024)) > 0)
+	while ((read_f = read(f_from, buffer, 1024)) != 0)
 	{
 		write_f = write(f_to, buffer, read_f);
 		if (write_f != read_f)
