@@ -25,7 +25,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	i = 0;
 	while (i < tmp)
 	{
-		write(1, &p[i], 1);
+		write(STDOUT_FILENO, &p[i], 1);
 		i++;
 	}
 	close(f);
