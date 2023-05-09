@@ -30,14 +30,15 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-
-	while ((read_f = read(f_from, buffer, 1024)) != 0)
+	while ((read_f = read(f_from, buffer, 1024)) > 0)
 	{
 		write_f = write(f_to, buffer, read_f);
 		if (write_f != read_f)
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	}
-
 	if (close(f_from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_from);
