@@ -3,6 +3,16 @@
 #include <fcntl.h>
 #include <stdio.h>
 /**
+ * err_100 - check the code
+ *@f: a variable
+ * Return: none.
+ */
+void err_100(int f)
+{
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
+	exit(100);
+}
+/**
  * main - check the code
  *@argv: parameter
  *@argc: parameter
@@ -45,14 +55,8 @@ int main(int argc, char *argv[])
 		}
 	}
 	if (close(f_from) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_from);
-		exit(100);
-	}
+		err_100(f_from);
 	if (close(f_to) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_to);
-		exit(100);
-	}
+		err_100(f_from);
 	return (0);
 }
