@@ -32,6 +32,11 @@ int main(int argc, char *argv[])
 	}
 	while ((read_f = read(f_from, buffer, 1024)) != 0)
 	{
+		if (read_f == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+			exit(98);
+		}
 		write_f = write(f_to, buffer, read_f);
 		if (write_f != read_f)
 		{
