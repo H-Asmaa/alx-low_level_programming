@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * err_100 - check the code
- *@f: a variable
+ * @f: a variable
  * Return: none.
  */
 void err_100(int f)
@@ -14,8 +14,8 @@ void err_100(int f)
 }
 /**
  * main - check the code
- *@argv: parameter
- *@argc: parameter
+ * @argv: parameter
+ * @argc: parameter
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
