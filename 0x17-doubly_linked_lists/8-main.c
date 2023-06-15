@@ -21,6 +21,15 @@ int main(void)
 	print_dlistint(head);
 	printf("-----------------\n");
 	delete_dnodeint_at_index(&head, 5);
+	while ((head)->next)
+		head = (head)->next;
+	while ((head)->prev)
+	{
+		printf("%d\n", (head)->n);
+		head = (head)->prev;
+	}
+	printf("%d\n", (head)->n);
+	printf("-----------------\n");
 	print_dlistint(head);
 	printf("-----------------\n");
 	delete_dnodeint_at_index(&head, 0);
