@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	dlistint_t *head;
+	dlistint_t *head, *new;
 
 	head = NULL;
 	add_dnodeint_end(&head, 0);
@@ -20,7 +20,8 @@ int main(void)
 	add_dnodeint_end(&head, 1024);
 	print_dlistint(head);
 	printf("-----------------\n");
-	insert_dnodeint_at_index(&head, 8, 4096);
+	new = insert_dnodeint_at_index(&head, 8, 4096);
+	insert_dnodeint_at_index(&new, 5, 14);
 	print_dlistint(head);
 	free_dlistint(head);
 	head = NULL;
