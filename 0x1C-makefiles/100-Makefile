@@ -9,12 +9,6 @@ WERROR := ${CFLAGS}
 all: ${SRC:.c=.o}
 	${CC} ${WERROR} $^ -o ${NAME}
 
-main.o: main.c m.h
-	${COMPILER} ${WERROR} -c $< -o $@
-
-school.o: school.c m.h
-	${COMPILER} ${WERROR} -c $< -o $@
-
 clean:
 	${RM} -f *~ ${NAME}
 
