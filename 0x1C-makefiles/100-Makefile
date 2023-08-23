@@ -3,7 +3,6 @@ COMPILER := ${CC}
 SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
-RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 WERROR := ${CFLAGS}
 
