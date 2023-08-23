@@ -5,6 +5,7 @@ NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 WERROR := ${CFLAGS}
 
+.PHONY: all clean oclean fclean re
 all: ${SRC:.c=.o}
 	${CC} ${WERROR} $^ -o ${NAME}
 
