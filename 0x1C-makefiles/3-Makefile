@@ -14,7 +14,8 @@ oclean:
 	${RM} -f ${OBJ}
 
 fclean:
-	${RM} -f *~ ${NAME} ${OBJ}
+	${RM} -f *~ ${NAME}
+	${RM} -f ${OBJ}
 
 re: ${SRC}
 	touch ${SRC}
