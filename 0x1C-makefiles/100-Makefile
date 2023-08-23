@@ -6,8 +6,8 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 WERROR := ${CFLAGS}
 
 .PHONY: all clean oclean fclean re
-all: ${OBJ}
-	${COMPILER} ${WERROR} $^ -o ${NAME}
+all: ${SRC:.c=.o}
+	${CC} ${WERROR} $^ -o ${NAME}
 
 clean:
 	${RM} -f *~ ${NAME}
