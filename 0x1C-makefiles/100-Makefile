@@ -1,13 +1,11 @@
 CC = gcc
-COMPILER := ${CC}
 SRC = main.c school.c
-OBJ = ${SRC:.c=.o}
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 WERROR := ${CFLAGS}
 
 all: ${SRC:.c=.o}
-	${COMPILER} ${WERROR} $^ -o ${NAME}
+	${CC} ${WERROR} $^ -o ${NAME}
 
 clean:
 	${RM} -f *~ ${NAME}
