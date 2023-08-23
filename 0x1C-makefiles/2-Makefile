@@ -1,4 +1,6 @@
 CC := gcc
 SRC := .c
-OBJ :=
-NAME :=
+OBJ := school.c main.c
+NAME := school
+
+all: 
