@@ -11,7 +11,7 @@ clean:
 	${RM} *~ ${NAME}
 
 oclean:
-	${RM} ${OBJ}
+	${RM} -f ${OBJ}
 
 fclean:
 	${RM} *~ ${NAME} ${OBJ}
