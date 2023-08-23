@@ -5,6 +5,10 @@ NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 WERROR := ${CFLAGS}
 
+ifeq ($(wildcard m.h),)
+$(error "m.h" header file is missing)
+endif
+
 .PHONY: all clean oclean fclean re
 all: ${SRC:.c=.o}
 	${CC} ${WERROR} $^ -o ${NAME}
