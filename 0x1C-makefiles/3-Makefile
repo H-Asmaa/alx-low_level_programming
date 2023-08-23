@@ -9,13 +9,12 @@ all: ${OBJ}
 
 clean:
 	${RM} *~ ${NAME}
+
 oclean:
 	${RM} -f ${OBJ}
 
 fclean:
 	${RM} *~ ${NAME} ${OBJ}
 
-re: ${SRC}
-	touch ${SRC}
-	${CC} ${OBJ} -o ${NAME}
+re: fclean all
 
